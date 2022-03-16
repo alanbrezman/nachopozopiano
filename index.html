@@ -1,17 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>
-        Hola
-    </h1>
-    <p>
-        primer archivo
-    </p>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>nachpozopiano | oficial</title>
+
+        <link href="styles.css" rel="stylesheet" type="text/css">
+        <link rel="icon" type="image/svg" href="assets/favicon.svg"/>
+    </head>
+
+    <body>
+        <header>
+            <img class="logotipo" src="./assets/logo.svg" alt="logotipo">
+        </header>
+        <section>
+            <div  class="virtual-piano-container">
+                <div class="black-keys-container">
+                    <button type="text" name="firstname" class="black-key">Db<br>C#</button>
+                    <button type="text" name="firstname" class="black-key">Eb<br>D#</button>
+                    <button type="text" name="firstname" class="black-key-space"></button>
+                    <button type="text" name="firstname" class="black-key">Gb<br>F#</button>
+                    <button type="text" name="firstname" class="black-key">Ab<br>G#</button>
+                    <button type="text" name="firstname" class="black-key">Bb<br>A#</button>
+                </div>
+                <div class="white-keys-container">
+                    <button type="text" name="firstname" class="white-key">C</button>
+                    <button type="text" name="firstname" class="white-key">D</button>
+                    <button type="text" name="firstname" class="white-key">E</button>
+                    <button type="text" name="firstname" class="white-key">F</button>
+                    <button type="text" name="firstname" class="white-key">G</button>
+                    <button type="text" name="firstname" class="white-key">A</button>
+                    <button type="text" name="firstname" class="white-key">B</button>
+                </div>
+            </div>
+
+            <div class="info-container">
+                <h1>Estamos haciendo la página web!</h1>
+                <p>Mientras tanto, puedes jugar con el <b>piano virtual</b> para familiarizarte con el instrumento ;)</p>
+                <form action="/action_page.php">
+                    <input type="text" id="lname" name="lname" placeholder="Ingresa tu mail">
+                    <button class="cta" type="submit" value="Submit">Quiero ser notificado</button>
+                </form> 
+            </div>
+        </section>
+        <footer>
+            <div class="social-icons-container">
+                <img class="social-icon" src="./assets/social/facebook.svg" alt="facebook"/>
+                <img class="social-icon" src="./assets/social/youtube.svg" alt="youtube"/>
+                <img class="social-icon" src="./assets/social/tiktok.svg" alt="tiktok"/>
+                <img class="social-icon" src="./assets/social/instagram.svg" alt="instagram"/>
+            </div>
+            <p class="footer-disclaimer">2022 ® <b>nachopozopiano</b> es una marca registrada.</p>
+        </footer>
+    </body>
 </html>
