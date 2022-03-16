@@ -195,6 +195,19 @@ form{
     border: none;
     border-radius: 8px;
     padding: 12px 30px;
+    transition: .3s;
+}
+
+.cta:hover {
+    font-family: 'Roboto';
+    font-weight: bold;
+    font-size: 14px;
+    color: #fff;
+    background-color: rgb(170, 11, 32);
+    outline: none;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 30px;
 }
 
 @media all and (max-width: 1024px) {
