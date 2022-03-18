@@ -150,13 +150,6 @@ section{
                 color: black;
                 padding: 5px;
     
-                &.space{
-                    width: 35px;
-                    height: 150px;
-                    background: none;
-                    border: none;
-                }
-    
                 &:focus{
                     color: white;
                     background: $pink;
@@ -167,6 +160,19 @@ section{
                 &:hover{
                     cursor: pointer;
                    
+                }
+
+                &.space{
+                    width: 35px;
+                    height: 150px;
+                    background: none;
+                    border: none;
+
+                    &:focus{
+                        color: none;
+                        background: none;
+                        border: 0px;
+                    }
                 }
             }
         }

@@ -116,11 +116,6 @@ section {
         font-size: 14px;
         color: black;
         padding: 5px; }
-        section .virtual-piano-container .black-keys-container .black-key.space {
-          width: 35px;
-          height: 150px;
-          background: none;
-          border: none; }
         section .virtual-piano-container .black-keys-container .black-key:focus {
           color: white;
           background: #e62e58;
@@ -128,6 +123,15 @@ section {
           border: 0px; }
         section .virtual-piano-container .black-keys-container .black-key:hover {
           cursor: pointer; }
+        section .virtual-piano-container .black-keys-container .black-key.space {
+          width: 35px;
+          height: 150px;
+          background: none;
+          border: none; }
+          section .virtual-piano-container .black-keys-container .black-key.space:focus {
+            color: none;
+            background: none;
+            border: 0px; }
   section .info-container {
     width: fit-content; }
     @media all and (max-width: 1024px) {

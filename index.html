@@ -3,11 +3,20 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="" />
+        <meta name="keywords" content="" />
+        <meta property="og:image" content=""/>
+        <meta name="twitter:title" content="nachpozopiano | oficial"/>
+        <meta name="twitter:description" content=""/>
+        <meta name="twitter:image" content=""/>
+
 
         <title>nachpozopiano | oficial</title>
 
         <link href="css/main.css" rel="stylesheet" type="text/css">
         <link rel="icon" type="image/svg" href="assets/favicon.svg"/>
+
+        
     </head>
 
     <body>
@@ -18,34 +27,34 @@
             <div  class="virtual-piano-container">
                 <div class="black-keys-container">
                     <button type="text" name="Db" class="black-key" onclick="playDb()">Db<br>C#</button>
-                    <audio id="Db" src="./js/notes/do-sostenido.mp3"></audio>
+                    <audio id="Db" src="./js/notes/do-sostenido.mp3" alt="Db"></audio>
                     <button type="text" name="Eb" class="black-key" onclick="playEb()">Eb<br>D#</button>
-                    <audio id="Eb" src="./js/notes/re-sostenido.mp3"></audio>
+                    <audio id="Eb" src="./js/notes/re-sostenido.mp3" alt="Eb"></audio>
 
                     <button type="text" class="black-key space"></button>
 
                     <button type="text" name="Gb" class="black-key" onclick="playGb()">Gb<br>F#</button>
-                    <audio id="Gb" src="./js/notes/fa-sostenido.mp3"></audio>
+                    <audio id="Gb" src="./js/notes/fa-sostenido.mp3" alt="Gb"></audio>
                     <button type="text" name="Ab" class="black-key" onclick="playAb()">Ab<br>G#</button>
-                    <audio id="Ab" src="./js/notes/sol-sostenido.mp3"></audio>
+                    <audio id="Ab" src="./js/notes/sol-sostenido.mp3" alt="Ab"></audio>
                     <button type="text" name="Bb" class="black-key" onclick="playBb()">Bb<br>A#</button>
-                    <audio id="Bb" src="./js/notes/la-sostenido.mp3"></audio>
+                    <audio id="Bb" src="./js/notes/la-sostenido.mp3" alt="Bb"></audio>
                 </div>
                 <div class="white-keys-container">
                     <button type="text" name="C" class="white-key" onclick="playC()">C</button>
-                    <audio id="C" src="./js/notes/do.mp3"></audio>
+                    <audio id="C" src="./js/notes/do.mp3" alt="C"></audio>
                     <button type="text" name="D" class="white-key" onclick="playD()">D</button>
-                    <audio id="D" src="./js/notes/re.mp3"></audio>
+                    <audio id="D" src="./js/notes/re.mp3" alt="D"></audio>
                     <button type="text" name="E" class="white-key" onclick="playE()">E</button>
-                    <audio id="E" src="./js/notes/mi.mp3"></audio>
+                    <audio id="E" src="./js/notes/mi.mp3" alt="E"></audio>
                     <button type="text" name="F" class="white-key" onclick="playF()">F</button>
-                    <audio id="F" src="./js/notes/fa.mp3"></audio>
+                    <audio id="F" src="./js/notes/fa.mp3" alt="F"></audio>
                     <button type="text" name="G" class="white-key" onclick="playG()">G</button>
-                    <audio id="G" src="./js/notes/sol.mp3"></audio>
+                    <audio id="G" src="./js/notes/sol.mp3" alt="G"></audio>
                     <button type="text" name="A" class="white-key" onclick="playA()">A</button>
-                    <audio id="A" src="./js/notes/la.mp3"></audio>
+                    <audio id="A" src="./js/notes/la.mp3" alt="A"></audio>
                     <button type="text" name="B" class="white-key" onclick="playB()">B</button>
-                    <audio id="B" src="./js/notes/si.mp3"></audio>
+                    <audio id="B" src="./js/notes/si.mp3" alt="B"></audio>
                 </div>
             </div>
 
@@ -67,24 +76,7 @@
             </div>
             <p class="footer-disclaimer">2022 ® <b>nachopozopiano</b> es una marca registrada.</p>
         </footer>
+
+        <script type="text/javascript" src="js/main.js"></script>
     </body>
 </html>
-
-<script>
-
-    //white notes
-    function playDb() { var Db = document.getElementById("Db"); Db.play(); }
-    function playEb() { var Eb = document.getElementById("Eb"); Eb.play(); }
-    function playGb() { var Gb = document.getElementById("Gb"); Gb.play(); }
-    function playAb() { var Ab = document.getElementById("Ab"); Ab.play(); }
-    function playBb() { var Bb = document.getElementById("Bb"); Bb.play(); }
-
-    //black notes
-    function playC() { var C = document.getElementById("C"); C.play(); }
-    function playD() { var D = document.getElementById("D"); D.play(); }
-    function playE() { var E = document.getElementById("E"); E.play(); }
-    function playF() { var F = document.getElementById("F"); F.play(); }
-    function playG() { var G = document.getElementById("G"); G.play(); }
-    function playA() { var A = document.getElementById("A"); A.play(); }
-    function playB() { var B = document.getElementById("B"); B.play(); }
-</script>
