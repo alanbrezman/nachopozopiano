@@ -17,26 +17,40 @@
         <section>
             <div  class="virtual-piano-container">
                 <div class="black-keys-container">
-                    <button type="text" name="firstname" class="black-key">Db<br>C#</button>
-                    <button type="text" name="firstname" class="black-key">Eb<br>D#</button>
-                    <button type="text" name="firstname" class="black-key space"></button>
-                    <button type="text" name="firstname" class="black-key">Gb<br>F#</button>
-                    <button type="text" name="firstname" class="black-key">Ab<br>G#</button>
-                    <button type="text" name="firstname" class="black-key">Bb<br>A#</button>
+                    <button type="text" name="Db" class="black-key" onclick="playDb()">Db<br>C#</button>
+                    <audio id="Db" src="./js/notes/do-sostenido.mp3"></audio>
+                    <button type="text" name="Eb" class="black-key" onclick="playEb()">Eb<br>D#</button>
+                    <audio id="Eb" src="./js/notes/re-sostenido.mp3"></audio>
+
+                    <button type="text" class="black-key space"></button>
+
+                    <button type="text" name="Gb" class="black-key" onclick="playGb()">Gb<br>F#</button>
+                    <audio id="Gb" src="./js/notes/fa-sostenido.mp3"></audio>
+                    <button type="text" name="Ab" class="black-key" onclick="playAb()">Ab<br>G#</button>
+                    <audio id="Ab" src="./js/notes/sol-sostenido.mp3"></audio>
+                    <button type="text" name="Bb" class="black-key" onclick="playBb()">Bb<br>A#</button>
+                    <audio id="Bb" src="./js/notes/la-sostenido.mp3"></audio>
                 </div>
                 <div class="white-keys-container">
-                    <button type="text" name="firstname" class="white-key">C</button>
-                    <button type="text" name="firstname" class="white-key">D</button>
-                    <button type="text" name="firstname" class="white-key">E</button>
-                    <button type="text" name="firstname" class="white-key">F</button>
-                    <button type="text" name="firstname" class="white-key">G</button>
-                    <button type="text" name="firstname" class="white-key">A</button>
-                    <button type="text" name="firstname" class="white-key">B</button>
+                    <button type="text" name="C" class="white-key" onclick="playC()">C</button>
+                    <audio id="C" src="./js/notes/do.mp3"></audio>
+                    <button type="text" name="D" class="white-key" onclick="playD()">D</button>
+                    <audio id="D" src="./js/notes/re.mp3"></audio>
+                    <button type="text" name="E" class="white-key" onclick="playE()">E</button>
+                    <audio id="E" src="./js/notes/mi.mp3"></audio>
+                    <button type="text" name="F" class="white-key" onclick="playF()">F</button>
+                    <audio id="F" src="./js/notes/fa.mp3"></audio>
+                    <button type="text" name="G" class="white-key" onclick="playG()">G</button>
+                    <audio id="G" src="./js/notes/sol.mp3"></audio>
+                    <button type="text" name="A" class="white-key" onclick="playA()">A</button>
+                    <audio id="A" src="./js/notes/la.mp3"></audio>
+                    <button type="text" name="B" class="white-key" onclick="playB()">B</button>
+                    <audio id="B" src="./js/notes/si.mp3"></audio>
                 </div>
             </div>
 
             <div class="info-container">
-                <h1>Estamos haciendo la página web!</h1>
+                <h1 class="title">Estamos haciendo la página web!</h1>
                 <p class="subtitle">Mientras tanto, puedes jugar con el <b>piano virtual</b> para familiarizarte con el instrumento ;)</p>
                 <form action="/action_page.php">
                     <input type="text" id="lname" name="lname" placeholder="Ingresa tu mail">
@@ -55,3 +69,22 @@
         </footer>
     </body>
 </html>
+
+<script>
+
+    //white notes
+    function playDb() { var Db = document.getElementById("Db"); Db.play(); }
+    function playEb() { var Eb = document.getElementById("Eb"); Eb.play(); }
+    function playGb() { var Gb = document.getElementById("Gb"); Gb.play(); }
+    function playAb() { var Ab = document.getElementById("Ab"); Ab.play(); }
+    function playBb() { var Bb = document.getElementById("Bb"); Bb.play(); }
+
+    //black notes
+    function playC() { var C = document.getElementById("C"); C.play(); }
+    function playD() { var D = document.getElementById("D"); D.play(); }
+    function playE() { var E = document.getElementById("E"); E.play(); }
+    function playF() { var F = document.getElementById("F"); F.play(); }
+    function playG() { var G = document.getElementById("G"); G.play(); }
+    function playA() { var A = document.getElementById("A"); A.play(); }
+    function playB() { var B = document.getElementById("B"); B.play(); }
+</script>

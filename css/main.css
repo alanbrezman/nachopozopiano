@@ -13,6 +13,9 @@ body {
   flex-direction: column;
   justify-content: space-evenly;
   height: 100vh; }
+  @media all and (max-width: 1024px) {
+    body {
+      height: auto; } }
 
 header {
   display: flex;
@@ -48,11 +51,28 @@ section {
   justify-content: center;
   align-items: center;
   gap: 30px; }
+  @media all and (max-width: 1024px) {
+    section {
+      flex-direction: column; } }
+  @media all and (max-width: 600px) {
+    section {
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 0; } }
   section .virtual-piano-container {
     display: flex;
     justify-content: center;
     position: relative;
     width: fit-content; }
+    @media all and (max-width: 600px) {
+      section .virtual-piano-container {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        width: fit-content;
+        transform: scale(0.8); } }
     section .virtual-piano-container .white-keys-container {
       display: flex;
       justify-content: center; }
@@ -110,13 +130,24 @@ section {
           cursor: pointer; }
   section .info-container {
     width: fit-content; }
-    section .info-container h1 {
+    @media all and (max-width: 1024px) {
+      section .info-container {
+        margin-bottom: 30px; } }
+    section .info-container .title {
       color: white;
       font-family: oswald;
       font-size: 72px;
       line-height: 72px;
       margin: 0;
       width: 520px; }
+      @media all and (max-width: 1024px) {
+        section .info-container .title {
+          text-align: center; } }
+      @media all and (max-width: 600px) {
+        section .info-container .title {
+          width: 360px;
+          font-size: 46px;
+          line-height: 56px; } }
     section .info-container .subtitle {
       color: white;
       font-family: roboto;
@@ -124,9 +155,25 @@ section {
       line-height: 34px;
       margin: 15px 0;
       width: 520px; }
+      @media all and (max-width: 1024px) {
+        section .info-container .subtitle {
+          text-align: center; } }
+      @media all and (max-width: 600px) {
+        section .info-container .subtitle {
+          width: 360px;
+          font-size: 21px;
+          line-height: 31px; } }
     section .info-container form {
       display: flex;
       gap: 8px; }
+      @media all and (max-width: 1024px) {
+        section .info-container form {
+          justify-content: center; } }
+      @media all and (max-width: 600px) {
+        section .info-container form {
+          width: 80%;
+          margin: 0 auto;
+          flex-direction: column; } }
       section .info-container form input {
         font-family: 'Roboto';
         font-size: 14px;
@@ -136,8 +183,11 @@ section {
         color: #9d9d9d;
         border: none;
         outline: none; }
+        @media all and (max-width: 600px) {
+          section .info-container form input {
+            width: auto; } }
       section .info-container form .cta {
-        font-family: 'Roboto';
+        font-family: roboto;
         font-weight: bold;
         font-size: 14px;
         color: #fff;
@@ -147,56 +197,16 @@ section {
         border-radius: 8px;
         padding: 12px 30px;
         transition: .3s; }
+        @media all and (max-width: 600px) {
+          section .info-container form .cta {
+            width: auto; } }
         section .info-container form .cta:hover {
-          font-family: 'Roboto';
+          font-family: roboto;
           font-weight: bold;
           font-size: 14px;
           color: #fff;
-          background-color: #aa0b20;
+          background-color: #661a24;
           outline: none;
           border: none;
           border-radius: 8px;
           padding: 12px 30px; }
-
-@media all and (max-width: 1024px) {
-  body {
-    height: auto; }
-  .info-container {
-    margin-bottom: 30px; }
-  section {
-    flex-direction: column; }
-  h1 {
-    text-align: center; }
-  .subtitle {
-    text-align: center; }
-  form {
-    justify-content: center; } }
-
-@media all and (max-width: 600px) {
-  body {
-    height: auto; }
-  section {
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 0; }
-  .virtual-piano-container {
-    display: flex;
-    justify-content: center;
-    position: relative;
-    width: fit-content;
-    transform: scale(0.85); }
-  h1 {
-    width: 360px;
-    font-size: 46px;
-    line-height: 56px; }
-  .subtitle {
-    width: 360px;
-    font-size: 21px;
-    line-height: 31px; }
-  form {
-    width: 360px;
-    flex-direction: column; }
-  input {
-    width: auto; } }

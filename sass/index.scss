@@ -15,6 +15,10 @@ body{
     flex-direction: column;
     justify-content: space-evenly;
     height: 100vh;
+
+    @media all and (max-width: 1024px) {
+        height: auto;
+    }
 }
 
 header{
@@ -67,11 +71,31 @@ section{
     align-items: center;
     gap: 30px;
 
+    @media all and (max-width: 1024px) {
+        flex-direction: column;
+    }
+
+    @media all and (max-width: 600px) {
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0;
+    }
+
     .virtual-piano-container {
         display: flex;
         justify-content: center;
         position: relative;
         width: fit-content;
+
+        @media all and (max-width: 600px) {
+            display: flex;
+            justify-content: center;
+            position: relative;
+            width: fit-content;
+            transform: scale(.8);
+        }
     
         .white-keys-container{
             display: flex;
@@ -150,14 +174,28 @@ section{
     
     .info-container{
         width: fit-content;
-    
-        h1{
+
+        @media all and (max-width: 1024px) {
+            margin-bottom: 30px;
+        }
+
+        .title{
             color: white;
             font-family: oswald;
             font-size: 72px;
             line-height: 72px;
             margin: 0;
             width: 520px;
+
+            @media all and (max-width: 1024px) {
+                text-align: center;
+            }
+
+            @media all and (max-width: 600px) {
+                width: 360px;
+                font-size: 46px;
+                line-height: 56px;
+            }
         }
         
         .subtitle{
@@ -167,12 +205,32 @@ section{
             line-height: 34px;
             margin: 15px 0;
             width: 520px;
+
+            @media all and (max-width: 1024px) {
+                text-align: center;
+            }
+
+            @media all and (max-width: 600px) {
+                width: 360px;
+                font-size: 21px;
+                line-height: 31px;
+            }
         }
     
         form{
             display: flex;
             gap: 8px;
         
+            @media all and (max-width: 1024px) {
+                justify-content: center;
+            }
+
+            @media all and (max-width: 600px) {
+                width: 80%;
+                margin: 0 auto;
+                flex-direction: column;
+            }
+
             input{
                 font-family: 'Roboto';
                 font-size: 14px;
@@ -182,10 +240,14 @@ section{
                 color: #9d9d9d;
                 border: none;
                 outline: none;
+
+                @media all and (max-width: 600px) {
+                    width: auto;
+                }
             }
         
             .cta {
-                font-family: 'Roboto';
+                font-family: roboto;
                 font-weight: bold;
                 font-size: 14px;
                 color: #fff;
@@ -195,13 +257,17 @@ section{
                 border-radius: 8px;
                 padding: 12px 30px;
                 transition: .3s;
+
+                @media all and (max-width: 600px) {
+                    width: auto;
+                }
         
                 &:hover {
-                    font-family: 'Roboto';
+                    font-family: roboto;
                     font-weight: bold;
                     font-size: 14px;
                     color: #fff;
-                    background-color: rgb(170, 11, 32);
+                    background-color: rgb(102, 26, 36);
                     outline: none;
                     border: none;
                     border-radius: 8px;
@@ -212,71 +278,3 @@ section{
     }
 }
 
-@media all and (max-width: 1024px) {
-    body{
-        height: auto;
-    }
-
-    .info-container{
-       margin-bottom: 30px;
-    }
-
-    section{
-        flex-direction: column;
-    }
-
-    h1 {
-        text-align: center;
-    }
-
-    .subtitle {
-        text-align: center;
-    }
-
-    form{
-        justify-content: center;
-    }
-}
-
-@media all and (max-width: 600px) {
-    body{
-        height: auto;
-    }
-
-    section{
-        margin: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 0;
-    }
-
-    .virtual-piano-container {
-        display: flex;
-        justify-content: center;
-        position: relative;
-        width: fit-content;
-        transform: scale(.85);
-    }
-
-    h1 {
-        width: 360px;
-        font-size: 46px;
-        line-height: 56px;
-    }
-
-    .subtitle {
-        width: 360px;
-        font-size: 21px;
-        line-height: 31px;
-    }
-
-    form {
-        width: 360px;
-        flex-direction: column;
-    }
-
-    input{
-        width: auto;
-    }
-}
