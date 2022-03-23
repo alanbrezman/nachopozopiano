@@ -1,9 +1,4 @@
    //white notes
-   document.getElementById("playC").addEventListener("click", myFunction);
-
-function myFunction() {
-  document.getElementById("C").play();
-}
    function playDb() { var Db = document.getElementById("Db"); Db.play(); }
    function playEb() { var Eb = document.getElementById("Eb"); Eb.play(); }
    function playGb() { var Gb = document.getElementById("Gb"); Gb.play(); }
