@@ -1,14 +1,15 @@
 import React from 'react';
+import Db1 from ".//assets/notes/do-sostenido.mp3";
 
 export function Section(){
 
-    let audioDb = new Audio("./js/notes/do-sostenido.mp3") 
-    const Db = () => { audioDb.play(); }
+    const audioDb = new Audio({Db1})
+    const Db = () => { audioDb.play(); };
 
-    let audioEb = new Audio("./js/notes/re-sostenido.mp3")
+    let audioEb = new Audio("./js/notes/re-sostenido.mp3");
     const Eb = () => { audioEb.play(); }
 
-    let audioGb = new Audio("./js/notes/fa-sostenido.mp3")
+    let audioGb = new Audio(".//assets/notes/do-sostenido.mp3")
     const Gb = () => { audioGb.play(); }
 
     let audioAb = new Audio("./js/notes/sol-sostenido.mp3")
