@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/nachopozopiano/static/css/main.2bca1833.css",
-    "main.js": "/nachopozopiano/static/js/main.d2b680a1.js",
-    "static/media/background.png": "/nachopozopiano/static/media/background.7ecf832b510c16c08a93.png",
-    "index.html": "/nachopozopiano/index.html",
-    "main.2bca1833.css.map": "/nachopozopiano/static/css/main.2bca1833.css.map",
-    "main.d2b680a1.js.map": "/nachopozopiano/static/js/main.d2b680a1.js.map"
+    "main.css": "/alanbrezman/nachopozopiano/static/css/main.b640e71b.css",
+    "main.js": "/alanbrezman/nachopozopiano/static/js/main.d2b680a1.js",
+    "static/media/background.png": "/alanbrezman/nachopozopiano/static/media/background.7ecf832b510c16c08a93.png",
+    "index.html": "/alanbrezman/nachopozopiano/index.html",
+    "main.b640e71b.css.map": "/alanbrezman/nachopozopiano/static/css/main.b640e71b.css.map",
+    "main.d2b680a1.js.map": "/alanbrezman/nachopozopiano/static/js/main.d2b680a1.js.map"
   },
   "entrypoints": [
-    "static/css/main.2bca1833.css",
+    "static/css/main.b640e71b.css",
     "static/js/main.d2b680a1.js"
   ]
 }
