@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/nachopozopiano/static/css/main.2bca1833.css",
+    "main.js": "/nachopozopiano/static/js/main.c35a3ab3.js",
+    "static/media/background.png": "/nachopozopiano/static/media/background.7ecf832b510c16c08a93.png",
+    "static/media/do-sostenido.mp3": "/nachopozopiano/static/media/do-sostenido.a4253b38d4e6e1978c74.mp3",
+    "static/media/logo.svg": "/nachopozopiano/static/media/logo.1b48e6ec9aaeae8854e39c3c6e96ccea.svg",
+    "static/media/instagram.svg": "/nachopozopiano/static/media/instagram.ed502c968900dd64869d9c49d7297af9.svg",
+    "static/media/youtube.svg": "/nachopozopiano/static/media/youtube.9450c7e70cf0b868ee7c6247adebc306.svg",
+    "index.html": "/nachopozopiano/index.html",
+    "static/media/tiktok.svg": "/nachopozopiano/static/media/tiktok.857ea4d74268d9e2984b945d66e7c897.svg",
+    "static/media/facebook.svg": "/nachopozopiano/static/media/facebook.ff6a593206c8d30db30c995b03291ac9.svg",
+    "main.2bca1833.css.map": "/nachopozopiano/static/css/main.2bca1833.css.map",
+    "main.c35a3ab3.js.map": "/nachopozopiano/static/js/main.c35a3ab3.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2bca1833.css",
+    "static/js/main.c35a3ab3.js"
+  ]
+}
