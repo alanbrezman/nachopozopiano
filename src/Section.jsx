@@ -1,43 +1,58 @@
 import React from 'react';
-import Db1 from ".//assets/notes/do-sostenido.mp3";
+import soundDb from './/assets/notes/do-sostenido.mp3';
+import soundEb from './/assets/notes/re-sostenido.mp3';
+import soundGb from './/assets/notes/fa-sostenido.mp3';
+import soundAb from './/assets/notes/sol-sostenido.mp3';
+import soundBb from './/assets/notes/la-sostenido.mp3';
+import soundC from './/assets/notes/do.mp3';
+import soundD from './/assets/notes/re.mp3';
+import soundE from './/assets/notes/mi.mp3';
+import soundF from './/assets/notes/fa.mp3';
+import soundG from './/assets/notes/sol.mp3';
+import soundA from './/assets/notes/la.mp3';
+import soundB from './/assets/notes/si.mp3';
+
+
 
 export function Section(){
 
-    const audioDb = new Audio({Db1})
-    const Db = () => { audioDb.play(); };
+    const varDb = new Audio(soundDb);
+    const Db = () => { varDb.play(); };
 
-    let audioEb = new Audio("./js/notes/re-sostenido.mp3");
-    const Eb = () => { audioEb.play(); }
+    const varEb = new Audio(soundEb);
+    const Eb = () => { varEb.play(); };
 
-    let audioGb = new Audio(".//assets/notes/do-sostenido.mp3")
-    const Gb = () => { audioGb.play(); }
+    const varGb = new Audio(soundGb);
+    const Gb = () => { varGb.play(); };
 
-    let audioAb = new Audio("./js/notes/sol-sostenido.mp3")
-    const Ab = () => { audioAb.play(); }
+    const varBb = new Audio(soundBb);
+    const Bb = () => { varBb.play(); };
 
-    let audioBb = new Audio("./js/notes/la-sostenido.mp3")
-    const Bb = () => { audioBb.play(); }
+    const varAb = new Audio(soundAb);
+    const Ab = () => { varAb.play(); };
 
-    let audioC = new Audio("./js/notes/do.mp3")
-    const C = () => { audioC.play(); }
 
-    let audioD = new Audio("./js/notes/re.mp3")
-    const D = () => { audioD.play(); }
+    const varC = new Audio(soundC);
+    const C = () => { varC.play(); };
 
-    let audioE = new Audio("./js/notes/mi.mp3")
-    const E = () => { audioE.play(); }
+    const varD = new Audio(soundD);
+    const D = () => { varD.play(); };
 
-    let audioF = new Audio("./js/notes/fa.mp3")
-    const F = () => { audioF.play(); }
+    const varE = new Audio(soundE);
+    const E = () => { varE.play(); };
 
-    let audioG = new Audio("./js/notes/sol.mp3")
-    const G = () => { audioG.play(); }
+    const varF = new Audio(soundF);
+    const F = () => { varF.play(); };
 
-    let audioA = new Audio("./js/notes/la.mp3")
-    const A = () => { audioA.play(); }
+    const varG = new Audio(soundG);
+    const G = () => { varG.play(); };
 
-    let audioB = new Audio("./js/notes/si.mp3")
-    const B = () => { audioB.play(); }
+    const varA = new Audio(soundA);
+    const A = () => { varA.play(); };
+
+    const varB = new Audio(soundB);
+    const B = () => { varB.play(); };
+    
 
 
     return <section>
