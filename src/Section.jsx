@@ -1,4 +1,5 @@
 import React from 'react';
+import { ContactUs } from './Form';
 import soundDb from './/assets/notes/do-sostenido.mp3';
 import soundEb from './/assets/notes/re-sostenido.mp3';
 import soundGb from './/assets/notes/fa-sostenido.mp3';
@@ -80,11 +81,8 @@ export function Section(){
 
                 <div className="info-container">
                     <h1 className="title">Estamos haciendo la página web!</h1>
-                    <p className="subtitle">Mientras tanto, puedes jugar con el <b>piano virtual</b> para familiarizarte con el instrumento ;)</p>
-                    <form action="/action_page.php">
-                        <input type="email" id="lname" name="lname" placeholder="Ingresa tu mail" required/>
-                        <button className="cta" type="submit" value="Submit">Quiero ser notificado</button>
-                    </form> 
+                    <p className="subtitle">Mientras tanto, puedes jugar con el <b>piano virtual</b> para familiarizarte con el instrumento ;)</p>   
+                    <ContactUs />
                 </div>
             </section>
 }
