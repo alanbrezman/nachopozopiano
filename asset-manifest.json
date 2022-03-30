@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.9ace45d8.css",
-    "main.js": "/static/js/main.7f30d622.js",
+    "main.js": "/static/js/main.3fef7f08.js",
     "static/media/background.png": "/static/media/background.7ecf832b510c16c08a93.png",
     "static/media/do-sostenido.mp3": "/static/media/do-sostenido.a4253b38d4e6e1978c74.mp3",
     "static/media/do.mp3": "/static/media/do.495868e9f8217a72ffa8.mp3",
@@ -22,10 +22,10 @@
     "static/media/tiktok.svg": "/static/media/tiktok.857ea4d74268d9e2984b945d66e7c897.svg",
     "static/media/facebook.svg": "/static/media/facebook.ff6a593206c8d30db30c995b03291ac9.svg",
     "main.9ace45d8.css.map": "/static/css/main.9ace45d8.css.map",
-    "main.7f30d622.js.map": "/static/js/main.7f30d622.js.map"
+    "main.3fef7f08.js.map": "/static/js/main.3fef7f08.js.map"
   },
   "entrypoints": [
     "static/css/main.9ace45d8.css",
-    "static/js/main.7f30d622.js"
+    "static/js/main.3fef7f08.js"
   ]
 }
