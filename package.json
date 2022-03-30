@@ -1,7 +1,7 @@
 {
   "name": "nachopozopiano",
   "version": "0.1.0",
-  "homepage": "https://alanbrezman.github.io/nachopozopiano",
+  "homepage": "https://www.nachopozopiano.com",
   "private": true,
   "dependencies": {
     "@emailjs/browser": "^3.5.0",
