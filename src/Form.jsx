@@ -18,7 +18,7 @@ export function ContactUs() {
   return (
     <form onSubmit={sendEmail}>
         <input type="email" name="from_email" placeholder="Ingresa tu mail" required/>
-        <button class="cta" type="submit" value="Send">Quiero ser notificado</button>
+        <button className="cta" type="submit" value="Send">Quiero ser notificado</button>
     </form> 
   );
 }
