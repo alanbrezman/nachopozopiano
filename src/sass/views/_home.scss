@@ -177,7 +177,7 @@ section{
                 width: 240px;
                 padding: 12px 12px;
                 border-radius: 8px;
-                color: #9d9d9d;
+                color: #4F4F4F;
                 border: none;
                 outline: none;
 
@@ -191,7 +191,7 @@ section{
                 font-weight: bold;
                 font-size: 14px;
                 color: #fff;
-                background: $pink;
+                background: $cta-color;
                 outline: none;
                 border: none;
                 border-radius: 8px;
@@ -207,7 +207,7 @@ section{
                     font-weight: bold;
                     font-size: 14px;
                     color: #fff;
-                    background-color: rgb(102, 26, 36);
+                    background-color: $cta-color-hover;
                     outline: none;
                     border: none;
                     border-radius: 8px;

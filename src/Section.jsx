@@ -62,7 +62,7 @@ export function Section(){
                         <button type="text" name="Db" className="black-key" onClick={Db}>Db<br/>C#</button>
                         <button type="text" name="Eb" className="black-key" onClick={Eb}>Eb<br/>D#</button>
 
-                        <button type="text" className="black-key space"></button>
+                        <div type="text" className="black-key space"></div>
 
                         <button type="text" name="Gb" className="black-key" onClick={Gb}>Gb<br/>F#</button>
                         <button type="text" name="Ab" className="black-key" onClick={Ab}>Ab<br/>G#</button>

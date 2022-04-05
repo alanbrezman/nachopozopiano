@@ -19,7 +19,15 @@ footer{
         transition: transform .5s;
         margin-bottom: .5em;
 
+        @media all and (max-width: 600px) {
+            width: 15em;
+        }
+
         .social-icon{
+
+            @media all and (max-width: 600px) {
+                width: 48px;
+            }
 
             &:hover{
                 transform: rotate(360deg);
